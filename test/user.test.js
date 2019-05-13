@@ -1,5 +1,5 @@
-import { loadUser } from '../src/js/user';
-import { httpGet } from '../src/js/http';
+import loadUser from '../src/js/user';
+import httpGet from '../src/js/http';
 
 jest.mock('../src/js/http');
 

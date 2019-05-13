@@ -1,4 +1,4 @@
-export function calculateTotal(purchases, applyDiscount = false) {
+export default function calculateTotal(purchases, applyDiscount = false) {
   const result = purchases.reduce(
     (acc, curr) => acc + curr.price * curr.count,
     0,
@@ -9,15 +9,4 @@ export function calculateTotal(purchases, applyDiscount = false) {
   }
 
   return result;
-}
-
-const prices = [
-  {}
-]
-
-function getPurchases(purchasesIdsAndCount) {
-  // ....
-
-  return calculateTotal(//...
-  )
 }

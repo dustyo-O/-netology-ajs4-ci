@@ -1,4 +1,4 @@
-import { calculateTotal } from "../src/js/script";
+import calculateTotal from '../src/js/script';
 
 test('should calculate total for purchases', () => {
   const input = [
