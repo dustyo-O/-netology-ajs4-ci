@@ -1,4 +1,4 @@
-import loadUser from '../src/js/user';
+import { loadUser } from '../src/js/user';
 import { httpGet } from '../src/js/http';
 
 jest.mock('../src/js/http');
@@ -10,6 +10,6 @@ beforeEach(() => {
 test('should call loadUser once', () => {
   httpGet.mockReturnValue(JSON.stringify({}));
 
-  loadUser(1);
+  expect(loadUser(1)).toEqual({});
   expect(httpGet).toBeCalledWith('http://server:8080/users/1');
 });
